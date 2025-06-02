@@ -75,7 +75,7 @@ int main()
 
         vector<bool> visitado(V, false);
 
-        cout << "Case #" << count << ": " << endl;
+        cout << "Case #" << count << ":\n";
 
         int num_componentes = 0;
 
@@ -98,14 +98,13 @@ int main()
                 //imprimir
                 for(auto p = componente_conexo.begin(); p != componente_conexo.end(); p++)
                 {
-                    cout << char(*p + 'a') << ", ";
+                    cout << char(*p + 'a') << ",";
                 }
                 cout << endl;
             }
         }
 
         cout << num_componentes << " connected components" << "\n\n";
-
 
         count++;
     }
